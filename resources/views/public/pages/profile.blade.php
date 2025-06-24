@@ -164,7 +164,7 @@
     <div class="profile-header shadow-black">
         <div class="profile-cover"></div>
         <div class="profile-picture-container">
-            <img src="{{ $user->profile_picture_url }}" alt="Profile Picture" class="profile-picture">
+            <img src="{{ Auth::user()->profile_picture ?? '/api/placeholder/40/40' }}" alt="Profile Picture" class="profile-picture">
             <form action="{{ route('profile.picture.update') }}" method="POST" enctype="multipart/form-data" class="upload-form">
                 @csrf
                 <label for="profile_picture" class="upload-photo-btn" title="Change Profile Picture">

@@ -25,7 +25,6 @@ class DocumentController extends Controller
 
             $query->whereNull('deleted_at');
         })->get();
-
         return view('admin.document.index', compact('documents'));
     }
 

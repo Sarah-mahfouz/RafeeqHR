@@ -5,10 +5,11 @@
     color: white !important;
   }
   .form-control, .form-select {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #d4b773 !important;
   }
   .card {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #d4b773 !important;
+    box-shadow: 0 2px 8px rgba(212, 183, 115, 0.2);
   }
   #head{
     color: white;
@@ -16,13 +17,64 @@
   #a{
     color: white !important;
   }
+  
+  /* Golden Theme Styles */
+  .bg-gradient-golden {
+    background: linear-gradient(45deg, #d4b773 0%, #c4a763 50%, #b89a54 100%);
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: #d4b773 !important;
+    box-shadow: 0 0 0 0.2rem rgba(212, 183, 115, 0.25) !important;
+  }
+  
+  .form-label {
+    color: #8b7c4a !important;
+    font-weight: 600;
+  }
+  
+  .btn-success {
+    background-color: #d4b773 !important;
+    border-color: #d4b773 !important;
+    color: #fff !important;
+  }
+  
+  .btn-success:hover {
+    background-color: #c4a763 !important;
+    border-color: #c4a763 !important;
+  }
+  
+  .btn-danger {
+    background-color: #b89a54 !important;
+    border-color: #b89a54 !important;
+    color: #fff !important;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a68949 !important;
+    border-color: #a68949 !important;
+  }
+  
+  .alert-danger {
+    background-color: rgba(184, 154, 84, 0.1) !important;
+    border-color: #b89a54 !important;
+    color: #8b7c4a !important;
+  }
+  
+  .text-danger {
+    color: #b89a54 !important;
+  }
+  
+  .border-secondary {
+    border-color: #d4b773 !important;
+  }
 </style>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 p-4">
             <div class="card">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-            <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
+            <div class="bg-gradient-golden shadow-dark border-radius-lg pt-4 pb-3">
               <h1 class="text-white text-capitalize ps-3">Edit HR Info</h1>
             </div>
             </div>

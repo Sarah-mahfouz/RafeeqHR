@@ -7,7 +7,7 @@
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <div style="
     background: linear-gradient(to right, #2c2c2c, #1a1a1a);
-    border-left: 8px solid #F44336;
+    border-left: 8px solid #d4b773;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     padding: 20px 0;
@@ -97,7 +97,7 @@
                             <div class="col-12">
                                 <h5 class="text-black">Document File:</h5>
                                 <div class="mb-2">
-                                    Current file: <a href="{{ Storage::url($document->file_path) }}" class="text-orange" target="_blank">View current document</a>
+                                    Current file: <a href="{{ Storage::url($document->file_path) }}" class="text-gold" target="_blank">View current document</a>
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
                                     <input type="file" class="form-control @error('file') is-invalid @enderror" name="file">
@@ -111,7 +111,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-12">
-                                <a href="{{ route('docs.index') }}" class="btn btn-orange">Back to List</a>
+                                <a href="{{ route('docs.index') }}" class="btn btn-gold">Back to List</a>
                                 <button type="submit" class="btn btn-black">Update Document</button>
                             </div>
                         </div>
@@ -127,27 +127,28 @@
         --white: #ffffff;
         --black: #000000;
         --light-black: #212121;
-        --orange: #FF5722;
-        --light-orange: #FFAB91;
+        --gold: #d4b773;
+        --light-gold: #e8d7a8;
+        --dark-gold: #b8a05c;
         --gray: #f5f5f5;
         --dark-gray: #e0e0e0;
     }
 
-    .text-orange {
-        color: var(--orange);
+    .text-gold {
+        color: var(--gold);
     }
 
-    .btn-orange {
-        background-color: var(--orange);
+    .btn-gold {
+        background-color: var(--gold);
         color: var(--white);
-        border-color: var(--orange);
+        border-color: var(--gold);
         transition: all 0.3s ease;
     }
 
-    .btn-orange:hover {
+    .btn-gold:hover {
         background-color: var(--white);
-        color: var(--orange);
-        border-color: var(--orange);
+        color: var(--gold);
+        border-color: var(--gold);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -170,8 +171,8 @@
         color: var(--white);
     }
 
-    .bg-orange {
-        background-color: var(--orange);
+    .bg-gold {
+        background-color: var(--gold);
         color: var(--white);
     }
 
@@ -196,7 +197,7 @@
         font-size: 1rem;
         color: var(--light-black);
         padding-left: 5px;
-        border-left: 3px solid var(--orange);
+        border-left: 3px solid var(--gold);
         margin-top: 5px;
     }
 
@@ -205,6 +206,21 @@
         font-size: 0.8rem;
         font-weight: 500;
         border-radius: 4px;
+    }
+
+    .bg-warning {
+        background-color: var(--gold) !important;
+        color: var(--white) !important;
+    }
+
+    .bg-success {
+        background-color: var(--dark-gold) !important;
+        color: var(--white) !important;
+    }
+
+    .bg-danger {
+        background-color: #8b6d3b !important;
+        color: var(--white) !important;
     }
 
     .border-radius-lg {
@@ -224,8 +240,8 @@
     }
 
     .input-group-outline .form-control:focus {
-        border-color: var(--orange);
-        box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25);
+        border-color: var(--gold);
+        box-shadow: 0 0 0 0.25rem rgba(212, 183, 115, 0.25);
     }
 </style>
 @endsection

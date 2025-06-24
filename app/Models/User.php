@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class User extends Authenticatable
 {
@@ -82,10 +83,7 @@ class User extends Authenticatable
     }
 
     // Add relationship to tickets
-    public function tickets()
-    {
-        return $this->hasMany(Ticket::class);
-    }
+    
 
     protected static function booted()
     {

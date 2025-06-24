@@ -20,8 +20,8 @@
 
   <style>
     :root {
-      --primary: #ff6b00;
-      --primary-dark: #e05f00;
+      --primary: #d4b773;
+      --primary-dark: #c0a45e;
       --black: #212121;
       --white: #ffffff;
       --light-gray: #f5f5f5;
@@ -151,7 +151,7 @@
     }
 
     .form-control:focus {
-      box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+      box-shadow: 0 0 0 3px rgba(212, 183, 115, 0.2);
       border-color: var(--primary);
     }
 
@@ -188,7 +188,7 @@
     .submit-btn:hover {
       background: var(--primary-dark);
       transform: translateY(-3px);
-      box-shadow: 0 7px 14px rgba(255, 107, 0, 0.3);
+      box-shadow: 0 7px 14px rgba(212, 183, 115, 0.3);
     }
 
     .submit-btn::after {
@@ -296,17 +296,7 @@
                 </div>
               </div>
               <h3 class="text-white mb-4 position-relative z-index-1">Sign In</h3>
-              <div class="d-flex justify-content-center gap-3 mb-2">
-                <a class="social-btn animate__animated animate__fadeInUp" href="javascript:;" style="animation-delay: 0.1s">
-                  <i class="fa fa-facebook text-white"></i>
-                </a>
-                <a class="social-btn animate__animated animate__fadeInUp" href="javascript:;" style="animation-delay: 0.2s">
-                  <i class="fa fa-github text-white"></i>
-                </a>
-                <a class="social-btn animate__animated animate__fadeInUp" href="javascript:;" style="animation-delay: 0.3s">
-                  <i class="fa fa-google text-white"></i>
-                </a>
-              </div>
+              
             </div>
 
             <div class="card-body p-4">

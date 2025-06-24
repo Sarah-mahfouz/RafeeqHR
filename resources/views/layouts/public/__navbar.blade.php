@@ -96,7 +96,7 @@
       padding-top: 12px;
     }
     
-    /* Search Box Styles */
+   
     .top-nav-search-box {
       position: relative;
       width: 350px;
@@ -104,7 +104,7 @@
     
     .top-nav-search-icon {
       position: absolute;
-      left: 12px;
+      left: 100px;
       top: 50%;
       transform: translateY(-50%);
       color: #777;
@@ -126,7 +126,7 @@
       box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
     }
     
-    /* Right Side Icons */
+    
     .top-nav-right {
       display: flex;
       align-items: center;
@@ -139,7 +139,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 15px;
+          margin-left: 900px;
       color: #4a5568;
       cursor: pointer;
       transition: all 0.2s;
@@ -154,7 +154,7 @@
       font-size: 18px;
     }
     
-    /* Notification Badge */
+    
     .top-nav-badge {
       position: absolute;
       top: 5px;
@@ -172,7 +172,7 @@
       padding: 0 5px;
     }
     
-    /* User Profile */
+    
     .top-nav-user-profile {
       display: flex;
       align-items: center;
@@ -205,7 +205,7 @@
       color: #333;
     }
     
-    /* Quick Actions Menu */
+    
     .quick-actions-item {
       display: flex;
       flex-direction: column;
@@ -236,7 +236,7 @@
     .bg-primary { background-color: #3498db; }
     .bg-secondary { background-color: #95a5a6; }
     
-    /* Dropdown Menus */
+    
     .dropdown-menu {
       position: absolute;
       right: 0;
@@ -254,7 +254,7 @@
       overflow: hidden;
     }
     
-    /* Show dropdown class */
+    
     .dropdown-menu.show {
       opacity: 1;
       visibility: visible;
@@ -352,7 +352,7 @@
       margin-left: 5px;
     }
 
-    /* User Dropdown Menu */
+    
     .user-box {
       padding: 15px;
       display: flex;
@@ -407,7 +407,7 @@
       margin: 5px 0;
     }
     
-    /* Quick Actions Grid */
+    
     .quick-actions-items {
       padding: 10px;
     }
@@ -427,7 +427,7 @@
       width: 33.333333%;
     }
     
-    /* For smaller screens */
+    
     @media (max-width: 992px) {
       .col-md-4 {
         width: 50%;
@@ -466,7 +466,7 @@
       }
     }
     
-    /* Position fix for dropdowns */
+    
     .dropdown-container {
       position: relative;
     }
@@ -474,71 +474,22 @@
 
 <div class="main-header">
     
-    <!-- Main Navigation Container -->
+   
     <div class="top-nav-container">
       
       
-      <!-- Right Side Icons -->
+    
       <div class="top-nav-right">
       
         
         
-        <!-- Notifications with Badge -->
+       
         <div class="dropdown-container">
           <div class="top-nav-icon top-nav-notification-icon" id="notifDropdown">
-            <i class="fa fa-bell"></i>
-            <span class="top-nav-badge">4</span>
           </div>
           
           <!-- Notifications Dropdown -->
-          <div class="dropdown-menu notifications-dropdown">
-            <div class="dropdown-title">
-              You have 4 new notifications
-            </div>
-            <div class="notif-scroll">
-              <div class="notif-center">
-                <a href="#">
-                  <div class="notif-icon notif-primary">
-                    <i class="fa fa-user-plus"></i>
-                  </div>
-                  <div class="notif-content">
-                    <span class="block">New user registered</span>
-                    <span class="time">5 minutes ago</span>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="notif-icon notif-success">
-                    <i class="fa fa-comment"></i>
-                  </div>
-                  <div class="notif-content">
-                    <span class="block">Rahmad commented on Admin</span>
-                    <span class="time">12 minutes ago</span>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="notif-img">
-                    <img src="/api/placeholder/40/40" alt="Img Profile">
-                  </div>
-                  <div class="notif-content">
-                    <span class="block">Reza send messages to you</span>
-                    <span class="time">12 minutes ago</span>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="notif-icon notif-danger">
-                    <i class="fa fa-heart"></i>
-                  </div>
-                  <div class="notif-content">
-                    <span class="block">Farrah liked Admin</span>
-                    <span class="time">17 minutes ago</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <a class="see-all" href="javascript:void(0);">
-              See all notifications<i class="fa fa-angle-right"></i>
-            </a>
-          </div>
+         
         </div>
         
         
@@ -563,9 +514,19 @@
                 </div>
             </div>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">My Profile</a>
+            <a class="dropdown-item" href="{{route('profile.index')}}" style="background-color:rgb(207, 192, 150);">My Profile</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Logout</a>
+            <div class="logout-section">
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+            @csrf
+            <button type="submit" class="logout-button bg-dark">
+              <svg class="nav-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"></path>
+              </svg>
+              <span>Logout</span>
+            </button>
+          </form>
+        </div>
           </div>
         </div>
       </div>

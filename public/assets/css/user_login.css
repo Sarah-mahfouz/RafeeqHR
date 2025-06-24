@@ -2,7 +2,7 @@
     --background-color: #ffffff;
     --default-color: #444444;
     --heading-color: #273d4e;
-    --accent-color: #ff4a17;
+    --accent-color: #d4b773;
     --surface-color: #ffffff;
     --contrast-color: #ffffff;
 }
@@ -306,7 +306,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #e63500;
+    background-color: #d4b773;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 74, 23, 0.3);
 }

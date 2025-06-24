@@ -7,7 +7,7 @@ use App\Http\Controllers\LeaveController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\DocumentController as UserDocumentController;
-use App\Http\Controllers\TicketController;
+
 
 // Admin Controllers
 use App\Http\Controllers\Admin\AdminController;
@@ -20,7 +20,7 @@ use App\Http\Controllers\Admin\LeaveBalanceController;
 use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\LeaveTypeController;
 use App\Http\Controllers\Admin\DocumentTypeController;
-use App\Http\Controllers\Admin\TicketController as AdminTicketController;
+
 
 
 use App\Http\Middleware\AdminMiddleware;
@@ -31,6 +31,8 @@ use App\Models\Department;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/contact/send', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
 
 Auth::routes();
 
@@ -53,12 +55,18 @@ Route::prefix('employee')->middleware('user')->group(function () {
 
     Route::resource('docs', UserDocumentController::class);
 
-    Route::resource('tickets', TicketController::class);
+    
+
+
+    // للمستخدم العادي
+Route::post('/profile/picture/update', [UserController::class, 'updateProfilePicture'])->name('profile.picture.update');
+
+// للأدمن
+Route::put('/admin/users/{id}', [AdminUserController::class, 'update'])->name('admin.user_update');
 });
 
-// Route::get('/documents', [UserDocumentController::class, 'index'])->name('use.documents');
-// Route::get('/documents/create', [UserDocumentController::class, 'create'])->name('upload');
-// Route::post('/documents', [UserDocumentController::class, 'store'])->name('documents.store');
+
+
 
 // Admin Routes
 Route::middleware(['guest:admin'])->group(function () {
@@ -163,5 +171,7 @@ Route::prefix('admin')->middleware(['hr'])->group(function () {
     Route::post('/profile/picture', [UserController::class, 'updateProfilePicture'])
     ->name('profile.picture.update')
     ->middleware('auth');
+
+
     
 });

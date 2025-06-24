@@ -93,9 +93,7 @@ class AdminController extends Controller
         return redirect('/admin/hrs/hr')->with('message', 'HR updated successfully');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    
     public function destroy(string $id)
     {
         $hr = Admin::withTrashed()->findOrFail($id);

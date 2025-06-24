@@ -102,10 +102,10 @@
 <style>
     /* ===== إعدادات الألوان الأساسية ===== */
     :root {
-        --primary: #FF6B00;
-        --primary-light: #FF8A3C;
-        --primary-dark: #E05F00;
-        --primary-ultra-light: #FFF1E6;
+        --primary: #d4b773;
+        --primary-light: #e2c896;
+        --primary-dark: #b8a05c;
+        --primary-ultra-light: #f8f4e6;
         --black: #000000;
         --black-soft: #212121;
         --white: #FFFFFF;
@@ -114,7 +114,7 @@
         --gray-300: #DEE2E6;
         --gray-400: #CED4DA;
         --gray-500: #ADB5BD;
-        --error: #FF3B30;
+        --error: #d4b773;
     }
 
     body {
@@ -192,7 +192,7 @@
     }
 
     .form-control:focus {
-        box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+        box-shadow: 0 0 0 3px rgba(212, 183, 115, 0.2);
         border-color: var(--primary);
     }
 
@@ -251,7 +251,7 @@
         transform: translateY(-50%);
         width: 16px;
         height: 16px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FF6B00' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23d4b773' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: center;
         pointer-events: none;
@@ -307,7 +307,7 @@
 
     .update-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 15px rgba(255, 107, 0, 0.3);
+        box-shadow: 0 8px 15px rgba(212, 183, 115, 0.3);
     }
 
     .update-btn .btn-icon {
@@ -349,7 +349,7 @@
 
     /* ===== تصميم رسائل الخطأ ===== */
     .text-danger {
-        color: var(--error) !important;
+        color: var(--primary-dark) !important;
         font-size: 0.8rem;
         margin-top: 0.5rem;
         display: block;

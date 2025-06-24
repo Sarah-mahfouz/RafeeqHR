@@ -62,7 +62,7 @@
               <h4 class="mb-0">absent today</h4>
             </div>
             <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-              <i class="material-symbols-rounded opacity-10">weekend</i>
+              <i class="material-symbols-rounded  opacity-10" style="margin-top: -50px;">weekend</i>
             </div>
           </div>
         </div>

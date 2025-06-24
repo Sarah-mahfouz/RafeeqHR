@@ -38,7 +38,7 @@ class DocumentTypeController extends Controller
             'description' => 'required'
         ]);
         DocumentType::create($validated);
-        return redirect('admin.document-type.index')->with('message', 'New department added successfully');
+        return redirect('admin/document-type')->with('message', 'New department added successfully');
     }
 
     /**
@@ -86,7 +86,7 @@ class DocumentTypeController extends Controller
     {
         $department = DocumentType::findOrFail($id);
         $department->delete();
-        return redirect('admin.document-type.index')->with('message', 'Document type deleted successfully');
+        return redirect('admin/document-type')->with('message', 'Document type deleted successfully');
     }
 
     public function deleted_departments()

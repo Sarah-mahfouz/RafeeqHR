@@ -123,7 +123,7 @@
                     <p class="text-xs font-weight-bold mb-0">{{ $document->notes }}</p>
                   </td>
                   <td class="align-middle text-center">
-                    <p class="text-xs font-weight-bold mb-0">{{ $document->document_type->name }}</p>
+                    <p class="text-xs font-weight-bold mb-0">{{ $document->document_type->name}}</p>
                   </td>
                   <td class="align-middle text-center">
                     <div class="d-flex justify-content-center gap-2">

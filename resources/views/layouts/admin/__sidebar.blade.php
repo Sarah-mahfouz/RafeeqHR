@@ -206,11 +206,12 @@
             <div class="navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/dashboard.html">
+                        <a class="nav-link" href="{{ route('admin.attendances') }}">
                             <svg class="nav-icon" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path>
+                                <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+                                <path fill="currentColor" d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
                             </svg>
-                            <span>Dashboard</span>
+                            <span>Attendance</span>
                         </a>
                     </li>
 
@@ -327,15 +328,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.attendances') }}">
-                            <svg class="nav-icon" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
-                                <path fill="currentColor" d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
-                            </svg>
-                            <span>Attendance</span>
-                        </a>
-                    </li>
+                    
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('document.index')}}">
@@ -358,7 +351,7 @@
                     
 
                     <div class="separator"></div>
-                    <div class="section-title">Account</div>
+                    
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('hr.show', ['id' => Auth::guard('admin')->user()->id]) }}">

@@ -203,16 +203,16 @@
                           @elseif($leave->status == 'Approved')
                           <span class="badge" style="background-color: #198754;">Approved</span>
                           @elseif($leave->status == 'Rejected')
-                          <span class="badge bg-danger">Rejected</span>
+                          <span class=" badge bg-danger">Rejected</span>
                           @else
                           <span class="badge bg-secondary">{{ $leave->status }}</span>
                           @endif
                         </td>
                         <td>
                           <div class="btn-group" role="group">
-                            <a href="{{ route('leaves.show', $leave->id) }}" class="btn btn-sm" style="background-color: #ffde59; color: white;">View</a>
+                            <a href="{{ route('leaves.show', $leave->id) }}" class="btn  " style="background-color: #ffde59; color: white;">View</a>
                             @if($leave->status == 'Pending')
-                            <a href="{{ route('leaves.edit', $leave->id) }}" class="btn btn-sm btn-dark">Edit</a>
+                            <a href="{{ route('leaves.edit', $leave->id) }}" class="btn  btn-dark ">Edit</a>
                             @endif
                           </div>
                         </td>
@@ -313,7 +313,7 @@
         color: var(--accent-dark);
         font-weight: bold;
         border: none;
-        padding: 12px;
+        /* padding: 12px; */
         border-radius: 10px;
         margin-bottom: 15px;
         transition: all 0.3s;
@@ -329,7 +329,7 @@
         color: var(--main-yellow);
         font-weight: bold;
         border: none;
-        padding: 12px;
+        /* padding: 12px; */
         border-radius: 10px;
         margin-bottom: 15px;
         transition: all 0.3s;

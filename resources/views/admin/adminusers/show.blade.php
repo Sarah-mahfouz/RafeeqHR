@@ -69,34 +69,39 @@
 @endsection
 
 <style>
-    /* Main color scheme */
+    /* Main color scheme - Golden theme */
     :root {
-        --primary-black: #000000;
-        --primary-white: #ffffff;
-        --primary-orange: #FF6B00;
-        --light-gray: #f8f9fa;
-        --medium-gray: #dee2e6;
-        --dark-gray: #6c757d;
+        --primary-golden: #d4b773;
+        --golden-dark: #b8a05f;
+        --golden-darker: #9c8948;
+        --golden-light: #e6d198;
+        --golden-lighter: #f5f0e6;
+        --text-dark: #8b7355;
+        --text-light: #6f5a42;
     }
 
     body {
-        background-color: var(--light-gray);
+        background: linear-gradient(135deg, #f5f0e6, #e6d198);
+        min-height: 100vh;
     }
 
     .card {
-        border: 1px solid var(--medium-gray) !important;
-        border-radius: 8px;
+        border: 2px solid var(--golden-light) !important;
+        border-radius: 12px;
         overflow: hidden;
+        box-shadow: 0 8px 25px rgba(212, 183, 115, 0.2) !important;
     }
 
     .card-header.header-dark {
-        background-color: var(--primary-black);
-        color: var(--primary-white) !important;
+        background: linear-gradient(135deg, #d4b773, #b8a05f);
+        color: white !important;
         padding: 15px 20px;
+        border-bottom: 2px solid var(--golden-dark);
     }
 
     .card-body {
         padding: 25px;
+        background-color: var(--golden-lighter);
     }
 
     /* Profile image styling */
@@ -106,8 +111,10 @@
         border-radius: 50%;
         overflow: hidden;
         margin: 0 auto;
-        border: 3px solid var(--primary-orange);
-        padding: 3px;
+        border: 4px solid var(--primary-golden);
+        padding: 4px;
+        background: linear-gradient(135deg, #d4b773, #b8a05f);
+        box-shadow: 0 4px 15px rgba(212, 183, 115, 0.3);
     }
 
     .user-image {
@@ -115,80 +122,139 @@
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        border: 2px solid white;
     }
 
     /* Information sections */
     .info-section {
         margin-bottom: 18px;
-        padding: 10px;
-        border-radius: 6px;
-        background-color: var(--light-gray);
+        padding: 15px;
+        border-radius: 8px;
+        background: white;
+        border: 2px solid var(--golden-light);
+        box-shadow: 0 2px 8px rgba(212, 183, 115, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .info-section:hover {
+        border-color: var(--primary-golden);
+        box-shadow: 0 4px 12px rgba(212, 183, 115, 0.2);
+        transform: translateY(-2px);
     }
 
     .info-label {
         font-size: 14px;
-        font-weight: 600;
-        color: var(--primary-orange);
-        margin-bottom: 5px;
+        font-weight: 700;
+        color: var(--golden-darker);
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 
     .info-value {
         font-size: 16px;
-        color: var(--primary-black);
+        color: var(--text-dark);
+        font-weight: 500;
     }
 
     /* Button styling */
-    .btn-orange {
-        background-color: var(--primary-orange);
-        border-color: var(--primary-orange);
-        color: var(--primary-white);
+    .btn-warning {
+        background: linear-gradient(135deg, #d4b773, #b8a05f) !important;
+        border: 2px solid var(--golden-dark) !important;
+        color: white !important;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
     }
 
-    .btn-orange:hover {
-        background-color: #e05d00;
-        border-color: #e05d00;
-        color: var(--primary-white);
+    .btn-warning:hover {
+        background: linear-gradient(135deg, #b8a05f, #9c8948) !important;
+        border-color: var(--golden-darker) !important;
+        color: white !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 183, 115, 0.3);
+    }
+
+    .btn-danger {
+        background: linear-gradient(135deg, #9c8948, #8b7355) !important;
+        border: 2px solid var(--text-light) !important;
+        color: white !important;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-danger:hover {
+        background: linear-gradient(135deg, #8b7355, #6f5a42) !important;
+        border-color: #5d4936 !important;
+        color: white !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
     }
 
     .btn-outline-dark {
-        color: var(--primary-black);
-        border-color: var(--primary-black);
+        color: var(--text-dark) !important;
+        border: 2px solid var(--primary-golden) !important;
+        background: transparent;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
     }
 
     .btn-outline-dark:hover {
-        background-color: var(--primary-black);
-        color: var(--primary-white);
+        background: var(--primary-golden) !important;
+        color: white !important;
+        border-color: var(--golden-dark) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 183, 115, 0.3);
     }
 
     /* Card footer */
     .card-footer {
-        border-top: 1px solid var(--medium-gray);
+        border-top: 2px solid var(--golden-light) !important;
         padding: 15px 20px;
+        background: linear-gradient(135deg, #f5f0e6, #e6d198) !important;
     }
 
     /* Text colors */
     .text-dark {
-        color: var(--primary-black) !important;
+        color: var(--text-dark) !important;
+        font-weight: 600;
     }
 
     .text-muted {
-        color: var(--dark-gray) !important;
+        color: var(--golden-darker) !important;
+        font-weight: 500;
     }
 
     .equal-width-btn {
-    min-width: 100px;
-    text-align: center;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 500;
-}
+        min-width: 100px;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
 
-/* Optional: Make the form and button display as inline elements so spacing works correctly */
-.card-footer form {
-    display: inline-block;
-    margin: 0;
-}
-#a{
-    color: white;
-}
+    /* Optional: Make the form and button display as inline elements so spacing works correctly */
+    .card-footer form {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #a {
+        color: white !important;
+        font-weight: 600;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    h3 {
+        color: var(--text-dark) !important;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(212, 183, 115, 0.2);
+    }
+
+    h5 {
+        color: var(--text-dark) !important;
+        font-weight: 600;
+    }
 </style>

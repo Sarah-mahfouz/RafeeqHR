@@ -101,8 +101,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto" >
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        
         <img src="{{ asset('assets/img/logo.png') }}" alt="logo"  style="width:70px; height: 70px; margin-left: -10px; ">
         <h1 class="sitename">Rafeeq HR</h1>
         
@@ -112,7 +111,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#team">Developer</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="{{ route('login') }}">Login</a></li>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -134,7 +133,7 @@
         <p data-aos="fade-up" data-aos-delay="200">Track employees, attendance, and leave requests effortlessly</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
         
-          <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+          
         </div>
       </div>
 
@@ -151,30 +150,29 @@
               </div>
   
  
-  <h2 class="fw-bold position-relative d-inline-block" style="transition: transform 0.3s ease;">
-    <span style="background: linear-gradient(45deg, #906f3d, #d4b773); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem;">About</span>
-  
-    <span class="position-absolute start-0 bottom-0" style="height: 4px; width: 100%; background: linear-gradient(to right, transparent, #d4b773 50%, transparent); border-radius: 2px; transition: all 0.4s ease;"></span>
-  </h2>
-  
-  <!-- خط زخرفي تحت العنوان -->
-  <div class="subtitle-container mt-4">
-    <p class="text-muted fst-italic" style="font-size: 1.1rem; letter-spacing: 1px; color: #8a7446;">Discover Our Story</p>
-  </div>
-  
-  <!-- زخرفة إضافية -->
-  <div class="position-absolute d-none d-md-block" style="top: -15px; right: 20%; opacity: 0.1; transform: rotate(25deg);">
-    <i class="bi bi-pentagon-fill" style="font-size: 4rem; color: #d4b773;"></i>
-  </div>
-  <div class="position-absolute d-none d-md-block" style="bottom: -10px; left: 25%; opacity: 0.1; transform: rotate(-15deg);">
-    <i class="bi bi-circle-fill" style="font-size: 2.5rem; color: #906f3d;"></i>
-  </div>
-</div>
+                <h2 class="fw-bold position-relative d-inline-block" style="transition: transform 0.3s ease;">
+                  <span style="background: linear-gradient(45deg, #906f3d, #d4b773); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem;">About</span>
+                
+                  <span class="position-absolute start-0 bottom-0" style="height: 4px; width: 100%; background: linear-gradient(to right, transparent, #d4b773 50%, transparent); border-radius: 2px; transition: all 0.4s ease;"></span>
+                </h2>
+                
+                
+                <div class="subtitle-container mt-4">
+                  <p class="text-muted fst-italic" style="font-size: 1.1rem; letter-spacing: 1px; color: #8a7446;">Discover Our Story</p>
+                </div>
+                
+                
+                <div class="position-absolute d-none d-md-block" style="top: -15px; right: 20%; opacity: 0.1; transform: rotate(25deg);">
+                  <i class="bi bi-pentagon-fill" style="font-size: 4rem; color: #d4b773;"></i>
+                </div>
+                <div class="position-absolute d-none d-md-block" style="bottom: -10px; left: 25%; opacity: 0.1; transform: rotate(-15deg);">
+                  <i class="bi bi-circle-fill" style="font-size: 2.5rem; color: #906f3d;"></i>
+                </div>
+              </div>
 
                 <div class="row g-4 align-items-center">
                   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="about-image-container h-100 d-flex flex-column">
-                      <!-- <h3 class="mb-4">Effortless HR Management Streamline employee records, attendance, and leave requests with ease</h3> -->
                       <div class="flex-grow-1 d-flex align-items-center">
                         <img src="{{ asset('assets/img/picture.jpg') }}" class="img-fluid rounded-4 " alt="HR Management System" style="width: 100%; height: 545px;">
                       </div>
@@ -183,7 +181,6 @@
                   
                   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
                     <div class="about-content h-100">
-                      <!-- Start of Rafeeq HR About Section -->
                       <div class="about-rafeeq h-100" style="background:rgb(226, 216, 192); padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                         <h3 style="color: #2c3e50; margin-bottom: 20px;">About Rafeeq HR</h3>
                         
@@ -211,7 +208,7 @@
                         
                         
                       </div>
-                      <!-- End of Rafeeq HR About Section -->
+                     
                     </div>
                   </div>
                 </div>
@@ -219,38 +216,87 @@
             </section><!-- /About Section -->
 
 
-    <section id="team" class="team section light-background">
+    <section id="team" class="about section py-5">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
-      </div><!-- End Section Title -->
+      <div class="container section-title text-center " data-aos="fade-up">
+  <h2 class="fw-bold position-relative d-inline-block" style="transition: transform 0.3s ease;">
+    <span style="background: linear-gradient(45deg, #906f3d, #d4b773); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem;">About the Developer</span>
+    <span class="position-absolute start-0 bottom-0" style="height: 4px; width: 100%; background: linear-gradient(to right, transparent, #d4b773 50%, transparent); border-radius: 2px; transition: all 0.4s ease;"></span>
+  </h2>
+  
+  
+  <div class="subtitle-container mt-4">
+    <p class="text-muted fst-italic" style="font-size: 1.1rem; letter-spacing: 1px; color: #8a7446;">Discover Our Story</p>
+  </div>
+</div><!-- End Section Title -->
 
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-
-         
-
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100 border-0">
-              <div class="overflow-hidden">
-                <img src="{{ asset('assets/img/team/team2.png') }}" class="card-img-top img-fluid" alt="">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title mb-1">Sarah Mahfouz</h5>
-                <p class="card-text text-muted">Product Owner </p>
-                <div class="mt-3">
-                  <a href="https://www.facebook.com/share/18gvz9jnww/" class="btn btn-sm btn-outline-primary rounded-circle mx-1"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/sarahmahfooz__02?igsh=MW9mbzNiYnphcXIyeg==" class="btn btn-sm btn-outline-primary rounded-circle mx-1"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/sarah-mahfooz-406087277/" class="btn btn-sm btn-outline-primary rounded-circle mx-1"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+<div class="container">
+    <div class="row align-items-center g-4">
+     
+      <div class="col-md-5">
+        <div class="profile-image-container bg-white shadow-sm rounded p-3" style="transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+          <img src="{{ asset('assets/img/team/team2.png') }}" class="img-fluid" style="border-radius: 5%;" alt="sarah mahfooz">
         </div>
       </div>
+      
+     
+      <div class="col-md-7">
+        <div class="dev-info">
+         
+          <h2 class="fw-bold position-relative d-inline-block mb-4" style="transition: transform 0.3s ease;">
+            <span class="position-absolute start-0 bottom-0" style="height: 4px; width: 100%; background: linear-gradient(to right, transparent, #d4b773 50%, transparent); border-radius: 2px; transition: all 0.4s ease;"></span>
+          </h2>
+          
+         
+          <p class="lead mb-4" style="color: #555; line-height: 1.7;">
+          Hi, I'm Sarah Mahfooz, a full-stack web developer passionate about building efficient and user-friendly web applications. Rafeeq HR is a project I developed to simplify HR processes through smart automation and clean design. I specialize in Laravel and modern web technologies, with a strong focus on usability and performance.
+
+
+         
+          <div class="skills-container mb-4">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <span class="badge rounded-pill  px-3 py-2 me-2 mb-2" style="background-color: #d4b773; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease;">HTML</span>
+              </li>
+              <li class="list-inline-item">
+                <span class="badge rounded-pill  px-3 py-2 me-2 mb-2" style="background-color: #d4b773; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease;">CSS</span>
+              </li>
+              <li class="list-inline-item">
+                <span class="badge rounded-pill  px-3 py-2 me-2 mb-2" style="background-color: #d4b773; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease; ">JS</span>
+              </li>
+              <li class="list-inline-item">
+                <span class="badge rounded-pill  px-3 py-2 me-2 mb-2" style="background-color: #d4b773; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease;">MySQL</span>
+              </li>
+              <li class="list-inline-item">
+                <span class="badge rounded-pill  px-3 py-2 me-2 mb-2" style="background-color: #d4b773; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease;">Laravel</span>
+              </li>
+            </ul>
+          </div>
+       
+          <div class="social-links">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://github.com/Sarah-mahfouz" class="btn btn-outline-dark rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; margin-right: 8px;">
+                  <i class="bi bi-github" style="font-size: 1.2rem;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/sarah-mahfooz-406087277/" class="btn btn-outline-dark rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; margin-right: 8px;">
+                  <i class="bi bi-linkedin" style="font-size: 1.2rem;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/sarahmahfooz__02/" class="btn btn-outline-dark rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; margin-right: 8px;">
+                  <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     </section><!-- /Team Section -->
 
@@ -263,10 +309,17 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>CONTACT-US</p>
-      </div><!-- End Section Title -->
+      <div class="container section-title text-center " data-aos="fade-up">
+  <h2 class="fw-bold position-relative d-inline-block" style="transition: transform 0.3s ease;">
+    <span style="background: linear-gradient(45deg, #906f3d, #d4b773); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem;">Contact Us</span>
+    <span class="position-absolute start-0 bottom-0" style="height: 4px; width: 100%; background: linear-gradient(to right, transparent, #d4b773 50%, transparent); border-radius: 2px; transition: all 0.4s ease;"></span>
+  </h2>
+  
+  
+  <div class="subtitle-container mt-4">
+    <p class="text-muted fst-italic" style="font-size: 1.1rem; letter-spacing: 1px; color: #8a7446;">Contact Us</p>
+  </div>
+</div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -275,25 +328,25 @@
             <div class="row gy-4">
 
               <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200" style="border: 1px solid #d4b773; transition: all 0.3s ease;">
+                  <i class="bi bi-geo-alt" style="color: #d4b773;"></i>
+                  <h3 style="color: #d4b773; font-weight: 600;">Address</h3>
                   <p>Jordan / Amman</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300" style="border: 1px solid #d4b773; transition: all 0.3s ease;">
+                  <i class="bi bi-telephone" style="color: #d4b773;"></i>
+                  <h3 style="color: #d4b773; font-weight: 600;">Call Us</h3>
                   <p>+962 79 7192 557</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400" style="border: 1px solid #d4b773; transition: all 0.3s ease;">
+                  <i class="bi bi-envelope" style="color: #d4b773;"></i>
+                  <h3 style="color: #d4b773; font-weight: 600;">Email Us</h3>
                   <p>Mahfouzsar@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -302,51 +355,52 @@
           </div>
 
           <div class="col-lg-6" id="contactForm">
-            @if(session('success'))
-            <div class="alert alert-success">
-              {{ session('success') }}
-            </div>
-            @endif
+            
 
-            @if ($errors->any())
-            <div class="alert alert-danger">
-              <ul class="mb-0">
-                @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-              </ul>
-            </div>
-            @endif
-
-            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              @csrf
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" id="uname" placeholder="Your Name" required value="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required value="">
-                </div>
+          <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" id="contactForm">
+                @csrf
 
                 
+                @if(session('success'))
+                    <div class="alert alert-success text-success fw-bold">{{ session('success') }}</div>
+                @endif
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required value="">
-                </div>
+               
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-                <div class="col-md-12">
-                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
-                </div>
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" id="uname" placeholder="Your Name" required style="border-color: #d4b773;">
+                    </div>
 
-                <div class="col-md-12 text-center">
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required style="border-color: #d4b773;">
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required style="border-color: #d4b773;">
+                    </div>
+
+                    <div class="col-md-12">
+                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Message" required style="border-color: #d4b773;"></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
                   <div class="loading" id="loading">Loading</div>
 
                   <button type="submit" class="btn btn-primary" id="">Send Message</button>
                   <div id="feedback" class="mt-3"></div>
 
                 </div>
-              </div>
+                </div>
             </form>
           </div>
 
@@ -361,52 +415,66 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
+    
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+  <footer id="footer" class="footer" style="background-color: #d4b773; color: white; padding: 0px 0 0px; margin-bottom: 0; ;">
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
+        <div class="col-lg-4 col-md-6 footer-about " style="margin-top: 0;"> 
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Talent Wave</span>
+            <span class="sitename" style="color: white; font-size: 24px; font-weight: bold;">Rafeeq HR</span>
           </a>
-          <div class="footer-contact pt-3">
+          <p style="color: white; margin-top: 15px; opacity: 0.9;">
+            Empowering organizations with comprehensive HR solutions that streamline workforce management and enhance employee experience.
+          </p>
+          <div class="footer-contact pt-3" style="color: white;">
             <p>Jordan</p>
             <p>Amman</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+962 79 7192 557</span></p>
-            <p><strong>Email:</strong> <span>contact@talentwave.com</span></p>
+            <p><strong>Email:</strong> <span>contact@rafeeqhr.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/18gvz9jnww/" style="color: white; margin-right: 15px; font-size: 18px;"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sarahmahfooz__02?igsh=MW9mbzNiYnphcXIyeg==" style="color: white; margin-right: 15px; font-size: 18px;"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sarah-mahfooz-406087277/" style="color: white; margin-right: 15px; font-size: 18px;"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Contact us</a></li>
+        <div class="col-lg-4 col-md-3 footer-links" style="margin-top: 0;">
+          <h4 style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 20px; margin-left: 60px;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin-left: 60px;">
+            <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: white;"></i> <a href="#hero" style="color: white; text-decoration: none;">Home</a></li>
+            <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: white;"></i> <a href="#about" style="color: white; text-decoration: none;">About Us</a></li>
+            <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: white;"></i> <a href="#team" style="color: white; text-decoration: none;">About Developer</a></li>
+            <li style="margin-bottom: 10px;"><i class="bi bi-chevron-right" style="color: white;"></i> <a href="#contact" style="color: white; text-decoration: none;">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <img src="{{ asset('assets/img/title1.png') }}" alt="" style="position: absolute; right: 20%; top: 35%; transform: translateY(-50%); max-height: 250px; padding: 0;">
+        <div class="col-lg-4 col-md-3 footer-contact" style="margin-top: 0;">
+          <h4 style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 20px;">Contact Info</h4>
+          <div style="margin-bottom: 10px; display: flex; align-items: flex-start; color: white;">
+            <i class="bi bi-envelope" style="margin-right: 10px;"></i>
+            <span>Sarahmahfooz1@gmail.com</span>
+          </div>
+          <div style="margin-bottom: 10px; display: flex; align-items: flex-start; color: white;">
+            <i class="bi bi-phone" style="margin-right: 10px;"></i>
+            <span>+962 79 7192 557</span>
+          </div>
+          <div style="margin-bottom: 10px; display: flex; align-items: flex-start; color: white;">
+            <i class="bi bi-geo-alt" style="margin-right: 10px;"></i>
+            <span>Jordan/Amman</span>
+          </div>
         </div>
-
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Talent Wave</strong> <span>All Rights Reserved</span></p>
+    <div class="container copyright text-center mt-4" style="border-top: 1px solid rgba(255, 255, 255, 0.3); padding-top: 20px;">
+      <p style="color: white; opacity: 0.8;">© <span>2025</span> <strong class="px-1 sitename">Rafeeq HR</strong> <span>All Rights Reserved</span></p>
     </div>
-
-  </footer>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -416,7 +484,7 @@
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+  
   <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
   <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
   <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
@@ -427,9 +495,13 @@
   <!-- Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
 
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
   <script src="{{asset('assets/js/contact.js')}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+ 
 
 </body>
 

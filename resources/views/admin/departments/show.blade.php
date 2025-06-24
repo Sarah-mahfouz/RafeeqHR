@@ -1,17 +1,107 @@
 @extends('layouts.admin')
 @section('content')
 @if (session('message'))
-<div class="alert alert-success text-center" role="alert">
+<div class="alert alert-success text-center" role="alert" style="background-color: #d4b773; border-color: #c4a763; color: #8b7c4a;">
     {{ session('message') }}
 </div>
 @endif
+
+<style>
+/* Custom Golden Theme Styles */
+.bg-gradient-golden {
+    background: linear-gradient(45deg, #d4b773 0%, #c4a763 50%, #b89a54 100%);
+}
+
+.card {
+    border: 1px solid #d4b773;
+    box-shadow: 0 2px 8px rgba(212, 183, 115, 0.2);
+}
+
+.card-header {
+    background: transparent;
+}
+
+.table thead th {
+    background-color: #f8f6f0;
+    color: #8b7c4a;
+    border-bottom: 2px solid #d4b773;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid rgba(212, 183, 115, 0.2);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(212, 183, 115, 0.1);
+}
+
+.btn-success {
+    background-color: #d4b773;
+    border-color: #d4b773;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #c4a763;
+    border-color: #c4a763;
+}
+
+.btn-warning {
+    background-color: #e8d099;
+    border-color: #e8d099;
+    color: #8b7c4a;
+}
+
+.btn-warning:hover {
+    background-color: #dcc688;
+    border-color: #dcc688;
+}
+
+.btn-danger {
+    background-color: #b89a54;
+    border-color: #b89a54;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #a68949;
+    border-color: #a68949;
+}
+
+.pagination-dark .pagination .page-link {
+    background-color: #f8f6f0;
+    border-color: #d4b773;
+    color: #8b7c4a;
+}
+
+.pagination-dark .pagination .page-link:hover {
+    background-color: #d4b773;
+    border-color: #d4b773;
+    color: #fff;
+}
+
+.pagination-dark .pagination .page-item.active .page-link {
+    background-color: #d4b773;
+    border-color: #d4b773;
+    color: #fff;
+}
+
+.avatar {
+    border: 2px solid rgba(212, 183, 115, 0.3);
+}
+
+.text-secondary {
+    color: #8b7c4a !important;
+}
+</style>
+
   <div class="container-fluid py-2">
     <div class="row">
       <div class="col-12">
 
         <div class="card my-4">
           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-            <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
+            <div class="bg-gradient-golden shadow-dark border-radius-lg pt-4 pb-3">
               <h1 class="text-white text-capitalize ps-3"> {{ $department->name }} Department</h1>
             </div>
           </div>
@@ -94,8 +184,5 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.min.js?v=3.2.0"></script>
-
-
-
 
 @endsection
